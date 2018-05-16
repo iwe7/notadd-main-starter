@@ -6,10 +6,7 @@
   "scripts": {
     "dev": "rimraf dist && webpack -w --config webpack.config.js --env.development --progress --profile --bail",
     "build": "rimraf dist && webpack --config webpack.config.js --env.production --progress --profile --bail",
-    "serve": "webpack-dev-server --config webpack.config.js --env.development --content-base ./dist",
-    "angular": "webpack --config webpack_angular.config.js",
-    "libs": "webpack --config webpack_libs.config.js",
-    "material": "webpack --config webapck_material.config.js"
+    "serve": "webpack-dev-server --config webpack.config.js --env.development --content-base ./dist"
   },
   "repository": {
     "type": "git",
