@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn build
+  /usr/local/bin/node /usr/local/bin/yarn dll
 
 PATH: 
   /Users/meepo/.rvm/gems/ruby-2.4.0/bin:/Users/meepo/.rvm/gems/ruby-2.4.0@global/bin:/Users/meepo/.rvm/rubies/ruby-2.4.0/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/meepo/.rvm/gems/ruby-2.4.0/bin:/Users/meepo/.rvm/gems/ruby-2.4.0@global/bin:/Users/meepo/.rvm/rubies/ruby-2.4.0/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/meepo/.rvm/bin:/Users/meepo/.rvm/bin
@@ -60,8 +60,6 @@ npm manifest:
       "@types/node": "^9.6.7",
       "copy-webpack-plugin": "^4.5.1",
       "css-loader": "^0.28.11",
-      "electron": "^2.0.0",
-      "electron-packager": "^12.0.2",
       "extract-text-webpack-plugin": "^4.0.0-beta.0",
       "file-loader": "^1.1.11",
       "html-loader": "^0.5.5",
@@ -72,7 +70,7 @@ npm manifest:
       "rimraf": "^2.6.2",
       "sass-loader": "^7.0.1",
       "style-loader": "^0.21.0",
-      "typescript": "~2.7.2",
+      "typescript": "2.7.2",
       "webpack": "^4.7.0",
       "webpack-cli": "^2.1.2",
       "webpack-dev-server": "^3.1.4"
@@ -89,7 +87,7 @@ Trace:
   Error: Command failed.
   Exit code: 2
   Command: sh
-  Arguments: -c rimraf dist && webpack --config webpack.config.js --env.production --progress --profile --bail
+  Arguments: -c webpack --config webpack_dll.config.js
   Directory: /Volumes/meepo/小明跑腿3.0/news/angular6-webpack4-quickstart
   Output:
   

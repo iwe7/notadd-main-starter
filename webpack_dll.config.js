@@ -19,7 +19,7 @@ module.exports = {
   },
   output: {
     filename: '[name].min.js',
-    path: path.resolve(__dirname, 'libs'),
+    path: path.resolve(__dirname, 'src/app/assets/libs'),
     library: '_dll_[name]',
   },
   optimization: {
@@ -50,7 +50,7 @@ module.exports = {
     new webpack.DllPlugin({
       context: __dirname,
       name: "_dll_[name]",
-      path: path.join(__dirname, 'libs', "[name].manifest.json"),
+      path: path.join(__dirname, 'src/app/assets/libs', "[name].manifest.json"),
     })
   ],
   mode: "production"
