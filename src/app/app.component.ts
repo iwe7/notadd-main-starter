@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-  title = "app1";
+  title = "app2";
 
   showApp1() {
     this.showApp("app1");
