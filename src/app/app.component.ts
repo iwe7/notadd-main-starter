@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-
+import { ActivatedRoute, Router, NavigationEnd } from "@angular/router";
+import { filter, tap } from "rxjs/operators";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -8,26 +9,17 @@ import { Component } from "@angular/core";
 export class AppComponent {
   title = "app";
 
-  showApp1() {
-    this.showApp("app1");
+  constructor(public router: Router) {
+    this.router.events
+      .pipe(filter(res => res instanceof NavigationEnd))
+      .subscribe((res: any) => {
+        this.showApp(res.url);
+      });
   }
-
-  showApp2() {
-    this.showApp("app2");
-  }
-
-  showApp3() {
-    this.showApp("app3");
-  }
-
-  showApp4() {
-    this.showApp("app4");
-  }
-
   showApp(path: string) {
     let script = document.createElement("script");
     script.src =
-      "https://meepo.com.cn/elements/" +
+      "https://meepo.com.cn/elements" +
       path +
       "/app.js?t=" +
       new Date().getTime();
