@@ -1,1 +1,12 @@
-{"name":"_dll_http","content":{"./node_modules/@angular/common/fesm5/http.js":{"id":327,"buildMeta":{"exportsType":"namespace","providedExports":["ɵangular_packages_common_http_http_a","ɵangular_packages_common_http_http_b","ɵangular_packages_common_http_http_c","ɵangular_packages_common_http_http_d","ɵangular_packages_common_http_http_e","ɵangular_packages_common_http_http_h","ɵangular_packages_common_http_http_i","ɵangular_packages_common_http_http_f","ɵangular_packages_common_http_http_g","HttpBackend","HttpHandler","HttpClient","HttpHeaders","HTTP_INTERCEPTORS","JsonpClientBackend","JsonpInterceptor","HttpClientJsonpModule","HttpClientModule","HttpClientXsrfModule","ɵinterceptingHandler","HttpParams","HttpUrlEncodingCodec","HttpRequest","HttpErrorResponse","HttpEventType","HttpHeaderResponse","HttpResponse","HttpResponseBase","HttpXhrBackend","XhrFactory","HttpXsrfTokenExtractor"]}}}}
+{
+    "name": "_dll_http",
+    "content": {
+        "./node_modules/@angular/common/fesm5/http.js": {
+            "id": 327,
+            "buildMeta": {
+                "exportsType": "namespace",
+                "providedExports": ["ɵangular_packages_common_http_http_a", "ɵangular_packages_common_http_http_b", "ɵangular_packages_common_http_http_c", "ɵangular_packages_common_http_http_d", "ɵangular_packages_common_http_http_e", "ɵangular_packages_common_http_http_h", "ɵangular_packages_common_http_http_i", "ɵangular_packages_common_http_http_f", "ɵangular_packages_common_http_http_g", "HttpBackend", "HttpHandler", "HttpClient", "HttpHeaders", "HTTP_INTERCEPTORS", "JsonpClientBackend", "JsonpInterceptor", "HttpClientJsonpModule", "HttpClientModule", "HttpClientXsrfModule", "ɵinterceptingHandler", "HttpParams", "HttpUrlEncodingCodec", "HttpRequest", "HttpErrorResponse", "HttpEventType", "HttpHeaderResponse", "HttpResponse", "HttpResponseBase", "HttpXhrBackend", "XhrFactory", "HttpXsrfTokenExtractor"]
+            }
+        }
+    }
+}

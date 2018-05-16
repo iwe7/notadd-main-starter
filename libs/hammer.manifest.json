@@ -1,1 +1,11 @@
-{"name":"_dll_hammer","content":{"./node_modules/hammerjs/hammer.js":{"id":226,"buildMeta":{"providedExports":true}}}}
+{
+    "name": "_dll_hammer",
+    "content": {
+        "./node_modules/hammerjs/hammer.js": {
+            "id": 226,
+            "buildMeta": {
+                "providedExports": true
+            }
+        }
+    }
+}
