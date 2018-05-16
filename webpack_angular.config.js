@@ -3,12 +3,12 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        angular: ['core-js/es7/reflect', '@angular/core', '@angular/forms', '@angular/common', '@angular/router', '@angular/common/http', '@angular/animations', '@angular/platform-browser/animations', '@angular/elements', '@angular/cdk']
+        ng: ['core-js/es7/reflect', '@angular/core', '@angular/forms', '@angular/common', '@angular/router', '@angular/common/http', '@angular/animations', '@angular/platform-browser/animations', '@angular/elements', '@angular/cdk']
     },
     output: {
         filename: '[name].min.js',
         path: path.resolve(__dirname, 'src/assets/libs'),
-        library: '_dll_[name]',
+        library: '[name]',
     },
     optimization: {
         minimize: true
@@ -16,28 +16,28 @@ module.exports = {
     plugins: [
         new webpack.DllPlugin({
             context: __dirname,
-            name: '_dll_[name]',
+            name: '[name]',
             path: path.join(__dirname, 'src/assets/libs', "[name].manifest.json"),
         }),
         new webpack.DllReferencePlugin({
             context: __dirname,
-            manifest: require("./src/assets/libs/rxjs.manifest.json"),
-            name: "_dll_rxjs"
+            manifest: require("./src/assets/libs/Rx.manifest.json"),
+            name: "Rx"
         }),
         new webpack.DllReferencePlugin({
             context: __dirname,
-            manifest: require("./src/assets/libs/lodash.manifest.json"),
-            name: "_dll_lodash"
+            manifest: require("./src/assets/libs/_.manifest.json"),
+            name: "_"
         }),
         new webpack.DllReferencePlugin({
             context: __dirname,
             manifest: require("./src/assets/libs/hammer.manifest.json"),
-            name: "_dll_hammer"
+            name: "hammer"
         }),
         new webpack.DllReferencePlugin({
             context: __dirname,
-            manifest: require("./src/assets/libs/zone.manifest.json"),
-            name: "_dll_zone"
+            manifest: require("./src/assets/libs/Zone.manifest.json"),
+            name: "Zone"
         }),
     ],
     mode: "production"

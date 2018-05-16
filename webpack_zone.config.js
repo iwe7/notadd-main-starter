@@ -3,12 +3,12 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        zone: ['zone.js/dist/zone'],
+        Zone: ['zone.js/dist/zone'],
     },
     output: {
         filename: '[name].min.js',
         path: path.resolve(__dirname, 'src/assets/libs'),
-        library: '_dll_[name]',
+        library: '[name]',
     },
     optimization: {
         minimize: true
@@ -16,7 +16,7 @@ module.exports = {
     plugins: [
         new webpack.DllPlugin({
             context: __dirname,
-            name: '_dll_[name]',
+            name: '[name]',
             path: path.join(__dirname, 'src/assets/libs', "[name].manifest.json"),
         })
     ],

@@ -72,34 +72,34 @@ module.exports = function (env, argv) {
       ]),
       new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require("./src/assets/libs/angular.manifest.json"),
-        name: "_dll_angular"
+        manifest: require("./src/assets/libs/Rx.manifest.json"),
+        name: "Rx"
+      }),
+      new webpack.DllReferencePlugin({
+        context: __dirname,
+        manifest: require("./src/assets/libs/_.manifest.json"),
+        name: "_"
       }),
       new webpack.DllReferencePlugin({
         context: __dirname,
         manifest: require("./src/assets/libs/hammer.manifest.json"),
-        name: "_dll_hammer"
+        name: "hammer"
       }),
       new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require("./src/assets/libs/lodash.manifest.json"),
-        name: "_dll_lodash"
+        manifest: require("./src/assets/libs/Zone.manifest.json"),
+        name: "Zone"
       }),
       new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require("./src/assets/libs/rxjs.manifest.json"),
-        name: "_dll_rxjs"
+        manifest: require("./src/assets/libs/ng.manifest.json"),
+        name: "ng"
       }),
       new webpack.DllReferencePlugin({
         context: __dirname,
         manifest: require("./src/assets/libs/material.manifest.json"),
-        name: "_dll_material"
+        name: "material"
       }),
-      new webpack.DllReferencePlugin({
-        context: __dirname,
-        manifest: require("./src/assets/libs/zone.manifest.json"),
-        name: "_dll_zone"
-    }),
     ]
   };
 };
