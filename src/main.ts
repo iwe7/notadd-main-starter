@@ -1,17 +1,11 @@
-import { enableProdMode, isDevMode } from "@angular/core";
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 
 import { AppModule } from "./app/app.module";
-
+// import { enableProdMode } from "@angular/core";
+// if (process.env.NODE_ENV === "production") {
+//   enableProdMode();
+// }
 import "./style.scss";
-
-if (process.env.NODE_ENV === "production") {
-  if (!window["enableProdMode"]) {
-    enableProdMode();
-    window["enableProdMode"] = true;
-  }
-}
-
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
   .then(res => {
@@ -21,9 +15,7 @@ platformBrowserDynamic()
   .catch(err => console.log(err));
 
 function destoryNgRef() {
-  let { ngRef } = window as any;
-  if (ngRef) {
-    ngRef.destory();
-    window["ngRef"] = null;
+  if ((<any>window)["ngRef"] && (<any>window)["ngRef"].destory) {
+    (<any>window)["ngRef"].destory();
   }
 }
