@@ -87,11 +87,6 @@ module.exports = function (env, argv) {
       }),
       new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require("./src/assets/libs/polyfills.manifest.json"),
-        name: "_dll_polyfills"
-      }),
-      new webpack.DllReferencePlugin({
-        context: __dirname,
         manifest: require("./src/assets/libs/angular.manifest.json"),
         name: "_dll_angular"
       }),
