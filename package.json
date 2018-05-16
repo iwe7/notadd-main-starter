@@ -1,7 +1,7 @@
 {
   "name": "angular6-webpack4-quickstart",
   "version": "0.1.0",
-  "description": "Angular 6 with Webpack 4 builder quickstart ",
+  "description": "主程序starter ",
   "main": "index.js",
   "scripts": {
     "dev": "rimraf dist && webpack -w --config webpack.config.js --env.development --progress --profile --bail",

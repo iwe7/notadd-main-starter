@@ -13,13 +13,12 @@ module.exports = {
     core: ['@angular/core'],
     browser: ['@angular/platform-browser', '@angular/platform-browser-dynamic'],
     rxjs: ['rxjs', 'rxjs/operators'],
-    moment: ['moment'],
     lodash: ['lodash'],
     hammer: ['hammerjs']
   },
   output: {
     filename: '[name].min.js',
-    path: path.resolve(__dirname, 'src/app/assets/libs'),
+    path: path.resolve(__dirname, 'src/assets/libs'),
     library: '_dll_[name]',
   },
   optimization: {
@@ -50,7 +49,7 @@ module.exports = {
     new webpack.DllPlugin({
       context: __dirname,
       name: "_dll_[name]",
-      path: path.join(__dirname, 'src/app/assets/libs', "[name].manifest.json"),
+      path: path.join(__dirname, 'src/assets/libs', "[name].manifest.json"),
     })
   ],
   mode: "production"

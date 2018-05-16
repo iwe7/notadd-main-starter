@@ -15,40 +15,25 @@ function getRoot(args) {
 module.exports = function (env, argv) {
   return {
     mode: env.production ? 'production' : 'development',
-
     entry: {
       app: "./src/main.ts",
       polyfills: "./src/polyfills.ts"
     },
-
     target: "web",
-
-    devtool: env.production ? false : "inline-source-map",
-
     output: {
       path: getRoot("dist"),
       publicPath: "/",
       filename: "[name].js"
     },
-
     resolve: {
       extensions: [".js", ".ts", ".html"]
     },
-
     module: {
       rules: [{
-          test: /.js$/,
-          parser: {
-            system: true
-          }
-        },
-        // Typescript
-        {
           test: /\.ts$/,
           exclude: /node_modules/,
           use: "@ngtools/webpack"
         },
-        // Templates
         {
           test: /\.html$/,
           exclude: getRoot("src", "index.html"),
@@ -87,8 +72,8 @@ module.exports = function (env, argv) {
       ]),
       new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require("./libs/meepo.manifest.json"),
-        name: "./libs/meepo.js"
+        manifest: require("./src/assets/libs/meepo.manifest.json"),
+        name: "_dll_meepo"
       })
     ]
   };
