@@ -72,9 +72,29 @@ module.exports = function (env, argv) {
       ]),
       new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require("./src/assets/libs/meepo.manifest.json"),
-        name: "_dll_meepo"
-      })
+        manifest: require("./src/assets/libs/angular.manifest.json"),
+        name: "_dll_angular"
+      }),
+      new webpack.DllReferencePlugin({
+        context: __dirname,
+        manifest: require("./src/assets/libs/hammer.manifest.json"),
+        name: "_dll_hammer"
+      }),
+      new webpack.DllReferencePlugin({
+        context: __dirname,
+        manifest: require("./src/assets/libs/lodash.manifest.json"),
+        name: "_dll_lodash"
+      }),
+      new webpack.DllReferencePlugin({
+        context: __dirname,
+        manifest: require("./src/assets/libs/rxjs.manifest.json"),
+        name: "_dll_rxjs"
+      }),
+      new webpack.DllReferencePlugin({
+        context: __dirname,
+        manifest: require("./src/assets/libs/material.manifest.json"),
+        name: "_dll_material"
+      }),
     ]
   };
 };
