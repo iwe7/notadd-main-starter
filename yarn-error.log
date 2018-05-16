@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn agnular
+  /usr/local/bin/node /usr/local/bin/yarn wepapck_material.config.js
 
 PATH: 
   /Users/meepo/.rvm/gems/ruby-2.4.0/bin:/Users/meepo/.rvm/gems/ruby-2.4.0@global/bin:/Users/meepo/.rvm/rubies/ruby-2.4.0/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/meepo/.rvm/gems/ruby-2.4.0/bin:/Users/meepo/.rvm/gems/ruby-2.4.0@global/bin:/Users/meepo/.rvm/rubies/ruby-2.4.0/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/meepo/.rvm/bin:/Users/meepo/.rvm/bin
@@ -7219,7 +7219,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.26.tgz#7bdd72f7668c5a7ad6b118148b4ea39c59d08d2d"
 
 Trace: 
-  Error: Command "agnular" not found.
+  Error: Command "wepapck_material.config.js" not found.
       at new MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
       at /usr/local/lib/node_modules/yarn/lib/cli.js:87307:17
       at Generator.next (<anonymous>)
