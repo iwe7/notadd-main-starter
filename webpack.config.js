@@ -87,10 +87,8 @@ module.exports = function (env, argv) {
       ]),
       new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require("./libs/manifest.json"),
-        name: "./libs/angular.js",
-        scope: "xyz",
-        sourceType: "commonjs2"
+        manifest: require("./libs/meepo.manifest.json"),
+        name: "./libs/meepo.js"
       })
     ]
   };

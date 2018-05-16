@@ -14,11 +14,12 @@ module.exports = {
     browser: ['@angular/platform-browser', '@angular/platform-browser-dynamic'],
     rxjs: ['rxjs', 'rxjs/operators'],
     moment: ['moment'],
-    lodash: ['lodash']
+    lodash: ['lodash'],
+    hammer: ['hammerjs']
   },
   output: {
     filename: '[name].min.js',
-    path: path.resolve(__dirname, 'lisbs'),
+    path: path.resolve(__dirname, 'libs'),
     library: '_dll_[name]',
   },
   optimization: {
