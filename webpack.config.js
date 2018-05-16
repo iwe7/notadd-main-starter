@@ -95,6 +95,11 @@ module.exports = function (env, argv) {
         manifest: require("./src/assets/libs/material.manifest.json"),
         name: "_dll_material"
       }),
+      new webpack.DllReferencePlugin({
+        context: __dirname,
+        manifest: require("./src/assets/libs/zone.manifest.json"),
+        name: "_dll_zone"
+    }),
     ]
   };
 };

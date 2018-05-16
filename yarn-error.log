@@ -23,9 +23,10 @@ npm manifest:
       "dev": "rimraf dist && webpack -w --config webpack.config.js --env.development --progress --profile --bail",
       "build": "rimraf dist && webpack --config webpack.config.js --env.production --progress --profile --bail",
       "serve": "webpack-dev-server --config webpack.config.js --env.development --content-base ./dist",
-      "angular": "webpack --config webpack_angular.config.js",
+      "zone": "webpack --config webpack_zone.config.js",
       "libs": "webpack --config webpack_libs.config.js",
-      "material": "webpack --config webapck_material.config.js"
+      "angular": "webpack --config webpack_angular.config.js",
+      "material": "webpack --config webpack_material.config.js"
     },
     "repository": {
       "type": "git",
@@ -7220,7 +7221,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c webpack --config webapck_material.config.js
+  Arguments: -c webpack --config webpack_material.config.js
   Directory: /Volumes/meepo/小明跑腿3.0/news/angular6-webpack4-quickstart
   Output:
   

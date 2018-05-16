@@ -39,6 +39,11 @@ module.exports = {
             manifest: require("./src/assets/libs/angular.manifest.json"),
             name: "_dll_angular"
         }),
+        new webpack.DllReferencePlugin({
+            context: __dirname,
+            manifest: require("./src/assets/libs/zone.manifest.json"),
+            name: "_dll_zone"
+        }),
     ],
     mode: "production"
 };
