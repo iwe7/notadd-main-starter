@@ -72,33 +72,33 @@ module.exports = function (env, argv) {
       ]),
       new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require("./src/assets/libs/Rx.manifest.json"),
-        name: "Rx"
+        manifest: require("./src/assets/libs/rxjs.manifest.json"),
+        name: "_dll_rxjs"
       }),
       new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require("./src/assets/libs/_.manifest.json"),
-        name: "_"
+        manifest: require("./src/assets/libs/lodash.manifest.json"),
+        name: "_dll_lodash"
       }),
       new webpack.DllReferencePlugin({
         context: __dirname,
         manifest: require("./src/assets/libs/hammer.manifest.json"),
-        name: "hammer"
+        name: "_dll_hammer"
       }),
       new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require("./src/assets/libs/Zone.manifest.json"),
-        name: "Zone"
+        manifest: require("./src/assets/libs/polyfills.manifest.json"),
+        name: "_dll_polyfills"
       }),
       new webpack.DllReferencePlugin({
         context: __dirname,
-        manifest: require("./src/assets/libs/ng.manifest.json"),
-        name: "ng"
+        manifest: require("./src/assets/libs/angular.manifest.json"),
+        name: "_dll_angular"
       }),
       new webpack.DllReferencePlugin({
         context: __dirname,
         manifest: require("./src/assets/libs/material.manifest.json"),
-        name: "material"
+        name: "_dll_material"
       }),
     ]
   };

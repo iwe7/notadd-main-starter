@@ -10,7 +10,8 @@
     "zone": "webpack --config webpack_zone.config.js",
     "libs": "webpack --config webpack_libs.config.js",
     "angular": "webpack --config webpack_angular.config.js",
-    "material": "webpack --config wepapck_material.config.js"
+    "material": "webpack --config wepapck_material.config.js",
+    "polyfills": "webpack --config wepapck_polyfills.config.js"
   },
   "repository": {
     "type": "git",
