@@ -13,15 +13,15 @@ export class AppComponent {
   }
 
   showApp2() {
-    this.showApp("app1");
+    this.showApp("app2");
   }
 
   showApp3() {
-    this.showApp("app1");
+    this.showApp("app3");
   }
 
   showApp4() {
-    this.showApp("app1");
+    this.showApp("app3");
   }
 
   showApp(path: string) {
